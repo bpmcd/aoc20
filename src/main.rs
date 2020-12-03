@@ -12,7 +12,7 @@ fn main() {
     if let Ok(input) = read_lines(&args[2]) {
         match args[1].as_str() {
             "1" => {
-                day1::run(input)
+                day1::run(input, args[3].parse::<i32>().expect("Unable to parse members argument"))
             },
             _ => {
                 println!("wrong function name");
