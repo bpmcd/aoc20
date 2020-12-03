@@ -3,6 +3,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 use std::env;
 mod day1;
+mod day2;
 
 
 fn main() {
@@ -14,6 +15,9 @@ fn main() {
             "1" => {
                 day1::run(input, args[3].parse::<i32>().expect("Unable to parse members argument"))
             },
+            "2" => {
+                day2::run(input)
+            }
             _ => {
                 println!("wrong function name");
             }
