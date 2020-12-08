@@ -47,7 +47,7 @@ fn is_valid2(policy: &Option<PasswordPolicy>) -> bool {
             let first_char = p.password.chars().nth((p.min_occurs - 1) as usize);
             let last_char = p.password.chars().nth((p.max_occurs - 1) as usize);
             let policy_char = p.letter.chars().nth(0);
-            
+
             if policy_char.is_none() {
                 println!("unkown letter: {}", p.letter);
                 false
