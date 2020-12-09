@@ -4,6 +4,7 @@ use std::path::Path;
 use std::env;
 mod day1;
 mod day2;
+mod day3;
 
 
 fn main() {
@@ -17,6 +18,9 @@ fn main() {
             },
             "2" => {
                 day2::run(input)
+            }
+            "3" => {
+                day3::run(input)
             }
             _ => {
                 println!("wrong function name");
